@@ -364,24 +364,39 @@ div {
 
 .example-one ul {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  -webkit-column-gap: 90px;
-     -moz-column-gap: 90px;
-          column-gap: 90px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .example-one ul {
+    grid-template-columns: repeat(2, auto);
+    -webkit-column-gap: 90px;
+       -moz-column-gap: 90px;
+            column-gap: 90px;
+  }
 }
 
 .example-two ol {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  -webkit-column-gap: 90px;
-     -moz-column-gap: 90px;
-          column-gap: 90px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .example-two ol {
+    grid-template-columns: repeat(2, auto);
+    -webkit-column-gap: 90px;
+       -moz-column-gap: 90px;
+            column-gap: 90px;
+  }
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  -webkit-column-gap: 90px;
-     -moz-column-gap: 90px;
-          column-gap: 90px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, auto);
+    -webkit-column-gap: 90px;
+       -moz-column-gap: 90px;
+            column-gap: 90px;
+  }
 }/*# sourceMappingURL=style.css.map */

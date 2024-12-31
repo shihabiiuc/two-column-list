@@ -393,20 +393,28 @@ div {
 // example 1
 .example-one ul {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  column-gap: 90px;
+  grid-template-columns: 1fr;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 90px;
+  }
 }
-
 // example 2
 .example-two ol {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  column-gap: 90px;
+  grid-template-columns: 1fr;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 90px;
+  }
 }
 
 // example 3
 .container {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  column-gap: 90px;
+  grid-template-columns: 1fr;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 90px;
+  }
 }
